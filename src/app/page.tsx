@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Instagram, Phone, Mail, MapPin, Calendar, Code, Database, Server, Globe, Download, ExternalLink, MessageCircle } from "lucide-react";
+import { Instagram, Phone, Mail, MapPin, Calendar, Code, Database, Server, Globe, ExternalLink, MessageCircle } from "lucide-react";
 
 export default function ResumePage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -62,14 +62,6 @@ export default function ResumePage() {
               SQL & NoSQL
             </Badge>
           </div>
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
-            onClick={() => window.open('/resume.pdf', '_blank')}
-          >
-            <Download className="w-4 h-4 mr-2" />
-            Download Resume
-          </Button>
         </div>
       </section>
 
